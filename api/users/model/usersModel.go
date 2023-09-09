@@ -23,7 +23,6 @@ func IsEmailUnique(email string) (bool, error) {
 		"email": email,
 	}
 	ctx := context.TODO()
-
 	var existingUser User
 
 	err := collection.FindOne(ctx, filter).Decode(&existingUser)

@@ -18,7 +18,6 @@ func main() {
 	}
 	app := gin.Default()
 	db.ConnectDB()
-
 	app.GET("/", func(ctx *gin.Context) {
 		ctx.JSON(http.StatusOK, "hello world")
 	})

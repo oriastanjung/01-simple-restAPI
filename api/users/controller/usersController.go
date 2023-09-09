@@ -85,6 +85,7 @@ func CreateOneUser() gin.HandlerFunc {
 		c.IndentedJSON(http.StatusCreated, responses)
 
 	}
+
 }
 
 func GetAllUsers() gin.HandlerFunc {

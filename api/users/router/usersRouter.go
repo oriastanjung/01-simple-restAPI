@@ -6,6 +6,7 @@ import (
 )
 
 func UsersGroup(router *gin.Engine) {
+
 	usersGroup := router.Group("/users")
 
 	{

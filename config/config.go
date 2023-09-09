@@ -18,7 +18,6 @@ func Load() (*AppConfig, error) {
 		log.Fatal("Error loading .env file")
 		return nil, err
 	}
-
 	cfg := &AppConfig{
 		PORT:        os.Getenv("PORT"),
 		MONGODB_URL: os.Getenv("MONGODB_URL"),

@@ -39,7 +39,6 @@ func ConnectDB() *mongo.Client {
 }
 
 // create client
-
 var DB *mongo.Client = ConnectDB()
 
 // getting database collections
